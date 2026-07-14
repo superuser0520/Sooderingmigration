@@ -3,34 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0f172a" />
-  <meta name="description" content="Our website has moved to food.soolihjing.online" />
-  <title>We Have Moved</title>
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Soodering has migrated and upgraded to a better experience." />
+  <title>A Better Soodering Is Here</title>
   <style>
-    :root{--bg-1:#020617;--bg-2:#0f172a;--card:rgba(15,23,42,.72);--card-border:rgba(255,255,255,.12);--text:#f8fafc;--muted:#cbd5e1;--accent:#38bdf8;--accent-2:#8b5cf6;--button-text:#020617;--shadow:0 25px 80px rgba(0,0,0,.35)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow:hidden;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at top left,rgba(56,189,248,.22),transparent 34%),radial-gradient(circle at bottom right,rgba(139,92,246,.24),transparent 36%),linear-gradient(135deg,var(--bg-1),var(--bg-2))}.background{position:fixed;inset:0;pointer-events:none;overflow:hidden}.orb{position:absolute;border-radius:999px;filter:blur(10px);opacity:.45;animation:float 10s ease-in-out infinite}.orb.one{width:240px;height:240px;top:-70px;left:-60px;background:rgba(56,189,248,.35)}.orb.two{width:320px;height:320px;right:-110px;bottom:-120px;background:rgba(139,92,246,.38);animation-delay:-3s}.orb.three{width:180px;height:180px;right:18%;top:18%;background:rgba(16,185,129,.18);animation-delay:-6s}@keyframes float{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(0,-18px,0) scale(1.05)}}.page{position:relative;min-height:100vh;display:grid;place-items:center;padding:24px}.card{width:min(100%,720px);padding:48px;text-align:center;border:1px solid var(--card-border);border-radius:28px;background:var(--card);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:var(--shadow);animation:rise .8s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}.badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:22px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);color:var(--muted);font-size:14px;font-weight:700;letter-spacing:.02em}.badge-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 6px rgba(34,197,94,.12)}.icon{width:82px;height:82px;margin:0 auto 22px;display:grid;place-items:center;border-radius:24px;background:linear-gradient(135deg,rgba(56,189,248,.95),rgba(139,92,246,.95));box-shadow:0 18px 40px rgba(56,189,248,.2);font-size:38px}h1{margin:0;font-size:clamp(34px,7vw,58px);line-height:1.02;letter-spacing:-.04em}.gradient-text{background:linear-gradient(90deg,#7dd3fc,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{max-width:560px;margin:20px auto 0;color:var(--muted);font-size:clamp(16px,2.6vw,19px);line-height:1.7}.url-box{margin:30px 0 22px;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:#e2e8f0;font-weight:800;word-break:break-word}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.button{min-width:220px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:14px;text-decoration:none;font-weight:900;transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease}.button.primary{color:var(--button-text);background:linear-gradient(135deg,#7dd3fc,#c4b5fd);box-shadow:0 14px 35px rgba(125,211,252,.22)}.button.secondary{color:var(--text);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}.button:hover{transform:translateY(-2px)}.button:active{transform:translateY(0)}.countdown{margin-top:26px;color:#94a3b8;font-size:14px}.countdown strong{color:#f8fafc}.progress{width:100%;height:6px;margin-top:14px;overflow:hidden;border-radius:999px;background:rgba(255,255,255,.08)}.progress-bar{height:100%;width:100%;border-radius:inherit;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform-origin:left;animation:countdown 8s linear forwards}@keyframes countdown{from{transform:scaleX(1)}to{transform:scaleX(0)}}.footer{margin-top:24px;color:#64748b;font-size:13px}@media(max-width:640px){.page{padding:18px}.card{padding:34px 22px;border-radius:24px}.icon{width:72px;height:72px;font-size:34px}.button{width:100%;min-width:0}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: #111111;
+      background: #ffffff;
+    }
+
+    main {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 28px;
+      padding: 8px 14px;
+      border: 1px solid #e5e5e5;
+      border-radius: 999px;
+      color: #555555;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 9vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin: 24px auto 0;
+      color: #666666;
+      font-size: clamp(18px, 3vw, 22px);
+      line-height: 1.6;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 34px 0;
+    }
+
+    .feature {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #f5f5f5;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .destination {
+      margin: 0 auto 24px;
+      color: #777777;
+      font-size: 15px;
+    }
+
+    .destination strong {
+      display: block;
+      margin-top: 6px;
+      color: #111111;
+      font-size: 18px;
+      word-break: break-word;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 240px;
+      padding: 16px 24px;
+      border-radius: 999px;
+      background: #111111;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+    .button:active { transform: translateY(0); }
+
+    .countdown {
+      margin-top: 24px;
+      color: #999999;
+      font-size: 14px;
+    }
+
+    .progress {
+      width: min(100%, 360px);
+      height: 3px;
+      margin: 14px auto 0;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #eeeeee;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: #111111;
+      transform-origin: left;
+      animation: progress 8s linear forwards;
+    }
+
+    @keyframes progress {
+      from { transform: scaleX(1); }
+      to { transform: scaleX(0); }
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #bbbbbb;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 28px 20px; }
+      .features { gap: 8px; margin: 28px 0; }
+      .button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="background" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div></div>
-  <main class="page"><section class="card">
-    <div class="badge"><span class="badge-dot"></span>Website migration completed</div>
-    <div class="icon" aria-hidden="true">↗</div>
-    <h1>We’ve moved to a <span class="gradient-text">new website</span></h1>
-    <p class="subtitle">Our previous website has been migrated. Please update your bookmark and continue to our new website using the link below.</p>
-    <div class="url-box">food.soolihjing.online</div>
-    <div class="actions">
-      <a class="button primary" href="https://food.soolihjing.online" aria-label="Visit the new website">Visit New Website <span aria-hidden="true">→</span></a>
-      <button class="button secondary" type="button" onclick="copyLink(event)">Copy Website Link</button>
+  <main>
+    <div class="badge">Soodering · New Version</div>
+
+    <h1>A better Soodering is here.</h1>
+
+    <p class="lead">
+      We have migrated and upgraded Soodering to deliver a faster, simpler,
+      and better experience for everyone.
+    </p>
+
+    <div class="features" aria-label="New Soodering improvements">
+      <span class="feature">Faster performance</span>
+      <span class="feature">Cleaner experience</span>
+      <span class="feature">Improved features</span>
     </div>
-    <div class="countdown">Redirecting automatically in <strong><span id="seconds">8</span> seconds</strong></div>
-    <div class="progress" aria-hidden="true"><div class="progress-bar"></div></div>
-    <div class="footer">Thank you for visiting.</div>
-  </section></main>
+
+    <p class="destination">
+      Continue to the new Soodering
+      <strong>food.soolihjing.online</strong>
+    </p>
+
+    <a class="button" href="https://food.soolihjing.online">
+      Explore the new Soodering <span aria-hidden="true">→</span>
+    </a>
+
+    <div class="countdown">
+      Redirecting automatically in <span id="seconds">8</span> seconds
+    </div>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress-bar"></div>
+    </div>
+
+    <footer>Thank you for being part of Soodering.</footer>
+  </main>
+
   <script>
-    const newWebsite="https://food.soolihjing.online";let seconds=8;const secondsElement=document.getElementById("seconds");
-    const timer=setInterval(()=>{seconds-=1;secondsElement.textContent=seconds;if(seconds<=0){clearInterval(timer);window.location.href=newWebsite}},1000);
-    async function copyLink(event){const button=event.currentTarget;try{await navigator.clipboard.writeText(newWebsite);button.textContent="Link Copied"}catch{button.textContent=newWebsite}setTimeout(()=>{button.textContent="Copy Website Link"},1800)}
+    const destination = "https://food.soolihjing.online";
+    let seconds = 8;
+    const secondsElement = document.getElementById("seconds");
+
+    const timer = setInterval(() => {
+      seconds -= 1;
+      secondsElement.textContent = seconds;
+
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = destination;
+      }
+    }, 1000);
   </script>
 </body>
 </html>
